@@ -1,7 +1,7 @@
+import './App.css';
 import About from '../About/About';
 import Home from '../Home/Home';
 import Navbar from '../Navbar/Navbar';
-import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route exact path='' element={<Home />} />
-        <Route path='/my-app/src/components/About/About.jsx' element={<About />} />
+        <Route path='../About/About' element={<About />} />
       </Routes>
     </BrowserRouter>
   )
