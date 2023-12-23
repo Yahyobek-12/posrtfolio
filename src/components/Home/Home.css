@@ -29,8 +29,8 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    backdrop-filter: blur(180px);
     justify-content: center;
+    backdrop-filter: blur(180px);
 }
 
 .hi {
@@ -99,7 +99,7 @@
     left: 0;
     z-index: 10;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     padding: 20px 20px;
     position: absolute;
     background: #2b2d42;
@@ -196,6 +196,10 @@ footer {
 
 @media only screen and (max-width: 660px) {
 
+    .container {
+        backdrop-filter: blur(30px);
+    }
+
     .myself {
         height: 30vh;
     }
@@ -209,7 +213,7 @@ footer {
     }
 
     .remove {
-        display: initialf;
+        display: initial;
     }
    
 }  
