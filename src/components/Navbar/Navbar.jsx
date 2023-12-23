@@ -1,5 +1,4 @@
 import './Navbar.css';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiTwotoneHome } from "react-icons/ai";
 import { FcBusinessContact, FcDiploma1, FcRules, FcGlobe } from "react-icons/fc";
@@ -13,7 +12,7 @@ const Navbar = () => {
       <h3 className="logo">yahyobek</h3>
       <ul className='navbar'>
         <Link to='' className='nav-links'>Home</Link>
-        <Link to='' className='nav-links'>about</Link>
+        <Link to='/my-app/src/components/About/About.jsx' className='nav-links'>about</Link>
         <Link to='' className='nav-links'>projects</Link>
         <Link to='' className='nav-links'>certificates</Link>
         <Link to='' className='nav-links'>travelling</Link>
@@ -25,7 +24,7 @@ const Navbar = () => {
               <h6>home</h6>
             </div>
             <div className="flex">
-              <Link to=''><FcBusinessContact className='mobile-icons' /></Link>
+              <Link to='/my-app/src/components/About/About.jsx'><FcBusinessContact className='mobile-icons' /></Link>
               <h6>about</h6>
             </div>
             <div className="flex">
@@ -37,7 +36,7 @@ const Navbar = () => {
               <h6>certificates</h6>
             </div>
             <div className="flex">
-              <Link to=''><FcRules className='mobile-icons' /></Link>
+              <Link to=''><FcGlobe className='mobile-icons' /></Link>
               <h6>travels</h6>
             </div>
         </ul>
