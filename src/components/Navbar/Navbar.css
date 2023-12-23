@@ -5,7 +5,7 @@ nav {
     color: #fff;
     padding: 0 20px;
     align-items: center;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(180px);
     justify-content: space-around;
 }
 

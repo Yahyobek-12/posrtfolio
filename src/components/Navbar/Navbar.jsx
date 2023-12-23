@@ -12,7 +12,7 @@ const Navbar = () => {
       <h3 className="logo">yahyobek</h3>
       <ul className='navbar'>
         <Link to='' className='nav-links'>Home</Link>
-        <Link to='../About/About' className='nav-links'>about</Link>
+        <Link to='/my-app/src/components/About/About.jsx' className='nav-links'>about</Link>
         <Link to='' className='nav-links'>projects</Link>
         <Link to='' className='nav-links'>certificates</Link>
         <Link to='' className='nav-links'>travelling</Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
               <h6>home</h6>
             </div>
             <div className="flex">
-              <Link to='../About/About'><FcBusinessContact className='mobile-icons' /></Link>
+              <Link to='/my-app/src/components/About/About.jsx'><FcBusinessContact className='mobile-icons' /></Link>
               <h6>about</h6>
             </div>
             <div className="flex">
