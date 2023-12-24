@@ -1,81 +1,118 @@
 .about {
     width: 100%;
-    height: 92vh;
+    height: 100vh;
 }
 
-.bg {
-    top: 0;
-    left: 0;
-    z-index: -1;
+.background {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
 }
 
-.bg img {
+.background img {
     width: 100%;
     height: 100%;
 }
 
 .about-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
-    color: #fff;
-    padding: 10px 100px;
     align-items: center;
-    justify-content: center;
     backdrop-filter: blur(180px);
+    justify-content: space-around;
 }
 
-.about-txt h3, h1, h2 {
+.img-card {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: -20px 20px #001d3d;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 10px -10px #0582ca;
+}
+
+.about-txt {
+    color: #fff;
+}
+
+.about-txt h2 {
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.about-txt a button {
-    width: 250px;
-    height: 45px;
-    outline: none;
+
+.txt-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.txt-flex h3 span {
+    color: #1BE07F;
+}
+
+.pdf {
     color: #fff;
-    font-size: 25px;
-    cursor: pointer;
+    font-size: 22px;
     transition: 0.5s;
+    padding: 10px 60px;
     border-radius: 5px;
-    background: transparent;
-    border: 1px solid #2970ff;
+    text-decoration: none;
+    background: #1be07f;
 }
 
-.about-txt a button:hover {
-    color: #fff;
+.pdf:hover {
+    opacity: 0.8;
     transition: 0.5s;
-    background: #2970ff;
 }
 
-/* Media Screen */
+/* Media screen */
 
-@media only screen and (max-width: 800px) {
-    .about-container {
-        padding: 10px 50px;
-    }
-
-    .about-txt h1 {
-        font-size: 20px;
-    }
-
-    .about-txt h2 {
-        font-size: 22px;
+@media only screen and (max-width: 1150px) {
+    .img-card {
+        width: 300px;
+        height: 300px;
     }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 1050px) {
     .about-container {
-        padding: 10px 20px;
+        display: block;
+        padding: 60px 50px;
     }
 
+    .img-card {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
     .about-txt h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
-    .about-txt h2 {
-        font-size: 22px;
+    .about-txt .school {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .txt-flex {
+        display: none;
+    }
+
+    .img-card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .pdf {
+        padding: 10px 40px;
     }
 }

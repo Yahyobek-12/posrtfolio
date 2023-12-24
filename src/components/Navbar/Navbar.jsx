@@ -1,7 +1,8 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { GrUserAdmin } from "react-icons/gr";
 import { AiTwotoneHome } from "react-icons/ai";
-import { FcBusinessContact, FcDiploma1, FcRules, FcGlobe } from "react-icons/fc";
+import { FcBusinessContact, FcDiploma1, FcRules } from "react-icons/fc";
 
 
 
@@ -14,8 +15,8 @@ const Navbar = () => {
         <Link to='' className='nav-links'>Home</Link>
         <Link to='/my-app/src/components/About/About.jsx' className='nav-links'>about</Link>
         <Link to='' className='nav-links'>projects</Link>
-        <Link to='' className='nav-links'>certificates</Link>
-        <Link to='' className='nav-links'>travelling</Link>
+        <Link to='' className='nav-links'>blogs</Link>
+        <Link to='' className='nav-links'>admin</Link>
       </ul>
 
         <ul className="mobile-navbar">
@@ -33,11 +34,11 @@ const Navbar = () => {
             </div>
             <div className="flex">
               <Link to=''><FcRules className='mobile-icons' /></Link>
-              <h6>certificates</h6>
+              <h6>blogs</h6>
             </div>
             <div className="flex">
-              <Link to=''><FcGlobe className='mobile-icons' /></Link>
-              <h6>travels</h6>
+              <Link to=''><GrUserAdmin className='mobile-icons' /></Link>
+              <h6>admin</h6>
             </div>
         </ul>
 
