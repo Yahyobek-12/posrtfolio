@@ -6,7 +6,7 @@ import adminBg from '../Images/register.jpg';
 const Admin = () => {
     const [state, setState] = useState({ password: '' })
     const [go, setGo] = useState(false)
-    let passwordKey = 'salom'
+    let passwordKey = '12345'
 
     const changeHandlerInput = (e) => {
         setState({[e.target.name]: [e.target.value]})
