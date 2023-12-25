@@ -10,7 +10,7 @@ const Admin = () => {
     const [go, setGo] = useState(false)
     let passwordKey = 'salom'
 
-    const notify = () => toast.success("password is correct", {
+    const notify = () => toast.success(<Link to=''>Go To dashboard</Link>, {
       autoClose: 3000,
       theme: 'dark'
     })
