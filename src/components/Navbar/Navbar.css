@@ -54,6 +54,7 @@ nav {
 }
 
 .flex {
+    cursor: pointer;
     text-align: center;
 }
 

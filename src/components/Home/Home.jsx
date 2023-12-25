@@ -1,10 +1,10 @@
 import './Home.css';
+import { useState } from 'react';
 import hi from '../Images/dog-hi.gif';
 import { FcDown } from "react-icons/fc";
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import { CiCircleRemove } from "react-icons/ci";
-import { FaInstagram, FaTelegram, FaGithub, FaFacebookMessenger, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaTelegram, FaGithub, FaFacebook, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Home = () => {
   const [self, setSelf] = useState();
@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className='home'>
 
-      <div className="sticks">
+      <div className="sticks">cd mt
         <div className="stick"></div>
         <div className="stick"></div>
       </div>
@@ -44,12 +44,12 @@ const Home = () => {
                 <Link to='' className='media'><FaInstagram /></Link>
                 <Link to='' className='media'><FaTelegram /></Link>
                 <Link to='' className='media'><FaGithub /></Link>
-                <Link to='' className='media'><FaTwitter  /></Link>
+                <Link to='' className='media'><FaYoutube  /></Link>
                 <Link to='' className='media'><FaLinkedinIn /></Link>
-                <Link to='' className='media'><FaFacebookMessenger /></Link>
+                <Link to='' className='media'><FaFacebook /></Link>
             </div>
 
-            <footer>&copy; 2023 yahyobek.vercel.app</footer>
+            <footer>&copy; 12-20-2023 yahyobek || Portfolio</footer>
       </div>
     </div>
   )

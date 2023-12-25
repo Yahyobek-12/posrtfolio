@@ -4,8 +4,6 @@ import { GrUserAdmin } from "react-icons/gr";
 import { AiTwotoneHome } from "react-icons/ai";
 import { FcBusinessContact, FcDiploma1, FcRules } from "react-icons/fc";
 
-
-
 const Navbar = () => {
 
   return (
@@ -16,7 +14,7 @@ const Navbar = () => {
         <Link to='/my-app/src/components/About/About.jsx' className='nav-links'>about</Link>
         <Link to='' className='nav-links'>projects</Link>
         <Link to='' className='nav-links'>blogs</Link>
-        <Link to='' className='nav-links'>admin</Link>
+        <Link to='/my-app/src/components/Admin/Admin.jsx' className='nav-links'>admin</Link>
       </ul>
 
         <ul className="mobile-navbar">
@@ -37,11 +35,10 @@ const Navbar = () => {
               <h6>blogs</h6>
             </div>
             <div className="flex">
-              <Link to=''><GrUserAdmin className='mobile-icons' /></Link>
+              <Link to='/my-app/src/components/Admin/Admin.jsx'><GrUserAdmin className='mobile-icons' /></Link>
               <h6>admin</h6>
             </div>
         </ul>
-
     </nav>
   )
 }

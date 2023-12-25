@@ -2,6 +2,7 @@ import './About.css';
 import me from '../Images/me.jpg';
 import { Link } from 'react-router-dom';
 import background from '../Images/bg.jpg';
+import Skills from './Skills';
 
 const About = () => {
   return (
@@ -28,6 +29,8 @@ const About = () => {
             <Link to='' className='pdf'>read more</Link>
         </div>
       </div>
+
+    <Skills />
     </div>
   )
 }
