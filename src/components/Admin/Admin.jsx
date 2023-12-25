@@ -2,18 +2,11 @@ import './Admin.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import adminBg from '../Images/register.jpg';
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
 
 const Admin = () => {
     const [state, setState] = useState({ password: '' })
     const [go, setGo] = useState(false)
     let passwordKey = 'salom'
-
-    const notify = () => toast.success(<Link to=''>Go To dashboard</Link>, {
-      autoClose: 3000,
-      theme: 'dark'
-    })
 
     const changeHandlerInput = (e) => {
         setState({[e.target.name]: [e.target.value]})
@@ -27,6 +20,7 @@ const Admin = () => {
             setGo(true);
         } else {
             setGo(false)
+            alert("inCorrect Password you are not admin")
         }
 
         e.target.reset()
@@ -44,10 +38,9 @@ const Admin = () => {
         <h1>are you admin</h1>
         <form onSubmit={formHandler}>
             <input type="text" placeholder='please write admin password' onChange={changeHandlerInput} name='password' />
-            <button className="btn-admin" type='submit' onClick={notify}>to try</button>
+            <button className="btn-admin" type='submit'>to try</button>
         </form>
-        <ToastContainer />
-        <Link className={go ? "go-active" : "go"}>Go To Dashboard</Link>
+        <Link to='/my-app/src/components/Dashboard/Dashboard.jsx' className={go ? "go-active" : "go"}>Go To Dashboard</Link>
       </div>
       </div>
 

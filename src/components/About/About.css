@@ -170,13 +170,14 @@
     }
 
     .skills {
-        height: 40vh;
+        height: 45vh;
         padding: 10px;
         backdrop-filter: blur(30px);
     }
 
     .mySwiper {
         height: 220px;
+        margin-top: -1.5rem;
     }
 
     .skills-icon {
@@ -184,7 +185,7 @@
     }
 
     .skills-page h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .skills-logo {
