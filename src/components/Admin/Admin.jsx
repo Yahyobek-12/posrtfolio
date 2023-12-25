@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const Admin = () => {
     const [state, setState] = useState({ password: '' })
     const [go, setGo] = useState(false)
-    let passwordKey = 'ikromjon'
+    let passwordKey = 'salom'
 
     const notify = () => toast.success("password is correct", {
       autoClose: 3000,
