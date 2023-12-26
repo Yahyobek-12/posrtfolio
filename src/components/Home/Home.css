@@ -102,7 +102,7 @@
     height: 60vh;
     padding: 20px 20px;
     position: absolute;
-    background: #2b2d42;
+    background: #161C24;
 }
 
 .remove {
@@ -168,7 +168,7 @@ footer {
     padding: 10px;
     position: absolute;
     align-items: center;
-    background: #212121;
+    background: #161C24;
     justify-content: center;
 }
 

@@ -1,9 +1,10 @@
 import './Dashboard.css'
+import Nav from './Nav/Nav'
 
 const Dashboard = () => {
   return (
-    <div className='dashboard'>
-      <h3>welcome sir</h3>
+    <div className="dashboard">
+      <Nav />
     </div>
   )
 }

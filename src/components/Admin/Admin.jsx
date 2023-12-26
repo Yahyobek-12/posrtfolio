@@ -40,7 +40,7 @@ const Admin = () => {
             <input type="text" placeholder='please write admin password' onChange={changeHandlerInput} name='password' />
             <button className="btn-admin" type='submit'>to try</button>
         </form>
-        <Link to='/my-app/src/components/Dashboard/Dashboard.jsx' className={go ? "go-active" : "go"}>Go To Dashboard</Link>
+        <Link to='/my-app/src/Dashboard/Dashboard.jsx' className={go ? "go-active" : "go"}>Go To Dashboard</Link>
       </div>
       </div>
 
